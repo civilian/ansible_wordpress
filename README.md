@@ -3,6 +3,9 @@ Ansible + Wordpress
 
 Installing, and managing [Wordpress](http://wordpress.com/) via [Ansible](ansible.cc) on [Ubuntu](http://www.ubuntu.com/server).
 
+What is this: an ansible playbook that manages wordpress.
+What is not; a Vagrant system in wich we can manage wordpress via vagrant.
+
 Ansible roles that are in this repo:
 
  - dist_upgrade: Handy for just doing general updates.

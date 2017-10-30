@@ -1,5 +1,5 @@
 ---
 - name: unpack the upload backup
   command: 7z x -aos -o/srv/ /tmp/wp-restore/wp-upload-backup.7z
-  sudo: true
+  become: yes
 - include: ../../../includes/set_wordpress_permissions.yml

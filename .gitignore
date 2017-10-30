@@ -1,5 +1,7 @@
-.*
+/.vagrant
+/provision_and_deploy/inventory/private
 !.gitignore
+/provision_and_deploy/.passwords/
 *.iml
 *.csr
 *.key

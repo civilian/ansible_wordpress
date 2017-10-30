@@ -1,0 +1,11 @@
+---
+- hosts: all
+  roles:
+   - common
+   - { role: install_wordpress, 
+       domain: 'ephorsec.org', 
+       db_name: 'wp_ct', 
+       server_admin_email: 'ephorsec@gmail.com', 
+       force_ssl_admin: true, 
+       force_http_auth_admin: true, 
+       wp_debug: false }
