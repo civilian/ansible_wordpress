@@ -1,0 +1,12 @@
+---
+# We change domain in this playbook, neither the old-domain nor the new-domain are defined because is dificult to obtain that variable but easy to put it as a programmer.
+# TODO: Automate the variables
+- name: put the sql file to change the domain
+  template: 
+    src: change-domain.sql.j2
+    dest: "/tmp/change-domain.sql"
+
+- name: execute the change-domain sql file to change domain in wordpress
+  mysql_db: name={{ db_name }} login_user={{ wordpress_db_user }} login_password={{ wordpress_db_password }} login_host={{ db_host }} state=import target="/tmp/change-domain.sql"
+
+## TODO https://codex.wordpress.org/Changing_The_Site_URL#Changing_the_Site_URL because shit does not work.

@@ -1,0 +1,9 @@
+---
+db_host: 'localhost'
+backup_user: 'vagrant'
+wordpress_db_user: 'wordpress'
+# Is not important to have a good password because this is
+# local, if the db server was another machine MAYBE it helps
+# but maybe is just about a private network.
+wordpress_db_password: 'password'
+archive_uploads: false

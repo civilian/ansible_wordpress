@@ -1,0 +1,7 @@
+# Variables for all the inventory machines
+db_name: 'wp_ct'
+server_admin_email: 'ephorsec@gmail.com'
+force_ssl_admin: true
+force_http_auth_admin: true
+wp_debug: false
+domain: 'ephorsec.org'

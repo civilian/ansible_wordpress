@@ -1,9 +1,0 @@
----
-- name: compress the upload directory
-  command: 7z a /tmp/wp-upload-backup.7z /srv/www
-  become: yes
-- name: fetch the backup
-  local_action: command rsync -a {{backup_user}}@{{domain}}:/tmp/wp-upload-backup.7z .backup/wp-upload-backup.7z
-- name: clean the 7z backup
-  file: path=/tmp/wp-upload-backup.7z state=absent
-  become: yes

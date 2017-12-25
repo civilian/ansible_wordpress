@@ -1,0 +1,7 @@
+# We use a new-domain because we normally don't use the http
+# or https for the domain
+UPDATE wp_options SET option_value = replace(option_value, '{{ old_domain }}', '{{ new_domain }}') WHERE option_name = 'home' OR option_name = 'siteurl';
+  
+UPDATE wp_posts SET post_content = replace(post_content, '{{ old_domain }}', '{{ new_domain }}');
+  
+UPDATE wp_postmeta SET meta_value = replace(meta_value, '{{ old_domain }}', '{{ new_domain }}');

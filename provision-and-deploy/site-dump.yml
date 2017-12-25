@@ -1,0 +1,6 @@
+---
+- hosts: all
+  vars:
+       archive_uploads: true
+  roles:
+   - dump-wordpress

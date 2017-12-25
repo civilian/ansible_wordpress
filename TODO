@@ -1,0 +1,6 @@
+-switch to nginx
+-Change the includes
+-Organize the plays in different play books and use include, do not mix everything.
+-Guardar solo 1 backup al tiempo?.
+-- ponerle hora al bakcup?.
+-Remove the atributes with = is not clean

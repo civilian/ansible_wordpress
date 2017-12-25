@@ -1,6 +1,0 @@
----
-db_host: 'localhost'
-backup_user: 'vagrant'
-wordpress_db_user: 'wordpress'
-wordpress_db_password: 'password'
-archive_uploads: false

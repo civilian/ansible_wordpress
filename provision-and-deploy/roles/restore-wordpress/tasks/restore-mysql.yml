@@ -1,0 +1,18 @@
+---
+# - name: unpack the mysql backup
+#   unarchive:
+#     src: /tmp/wp-restore/wp-backup.7z
+#     dest: /tmp/wp-restore/ 
+#     remote_src: yes
+
+
+- name: restore the mysql db
+  mysql_db: name={{ db_name }} login_user={{ wordpress_db_user }} login_password={{ wordpress_db_password }} login_host={{ db_host }} state=import target="/tmp/wp-restore/wp-backup.sql"
+  
+# - name: restore the mysql db
+#   mysql_db: 
+#     name: {{ db_name }} 
+#     login_user: {{ wordpress_db_user }}
+#     login_password: {{ wordpress_db_password }}
+#     login_host: {{ db_host }} 
+#     state: import target="/tmp/wp-restore/wp-backup.sql"

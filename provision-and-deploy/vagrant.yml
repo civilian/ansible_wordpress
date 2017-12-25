@@ -1,0 +1,15 @@
+---
+- hosts: localmachine
+  roles:
+   - common
+   - install-wordpress
+   - restore-wordpress
+
+
+- hosts: localmachine
+  vars:
+    # Really check the old_domain in the site url option
+    old_domain: 'https://www.ephorsec.org'
+    new_domain: 'http://localhost:50776'
+  roles:
+   - change-domain-wordpress

@@ -3,7 +3,7 @@ Ansible + Wordpress
 
 Installing, and managing [Wordpress](http://wordpress.com/) via [Ansible](ansible.cc) on [Ubuntu](http://www.ubuntu.com/server).
 
-What is this: an ansible playbook that manages wordpress.
+What is this: a standalone ansible playbook that manages wordpress.
 What is not; a Vagrant system in wich we can manage wordpress via vagrant.
 
 Ansible roles that are in this repo:
@@ -14,6 +14,12 @@ Ansible roles that are in this repo:
  - restore_wordpress: restores a wordpress backup to a given wordpress install.
 
 The example playbooks use the settings I use for my local development. I would suggest changing them as you need.
+
+How to test with vagrant
+
+-Install Vagrant.
+-Install ansible.
+-Go to localhost:50776
 
 TODO:
 

@@ -1,7 +1,13 @@
+/*.retry
+*/.directory
+.directory
 /.vagrant
 /provision_and_deploy/inventory/private
 !.gitignore
 /provision_and_deploy/.passwords/
+/provision_and_deploy/.backup/
+/provision_and_deploy/.backup./
+/.settings/*
 *.iml
 *.csr
 *.key

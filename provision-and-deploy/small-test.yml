@@ -1,0 +1,3 @@
+--
+- name: backup the wordpress mysql
+  mysql_db: name= login_user={{ wordpress_db_user }} login_password={{ wordpress_db_password }} login_host={{ db_host }} state=dump target="/tmp/wp-backup.sql"
